@@ -3,30 +3,30 @@ import React from "react"
 class Login extends React.Component {
     constructor() {
         super()
-        this.setState = {
-            userName: "",
-            email: "",
-            password: "",
-            isAdmin: false
-        }
+            this.setState=({
+                user: [
+                    {userName: "", email: "", password: "", admin: false }
+                ]
+            })
+
     }
-render() {
-    return(
-        <div>
-            <form>
-                <input type="text" placeholder="userName"></input>
-                <input type="text" placeholder="email"></input>
-                <input type="text" placeholder="password"></input>
-                <p>Admin</p>
-                <input type="checkbox"></input>
-                <button>Submit</button>
-            </form>
+    render() {
+        return(
+            <div>
+                <form>
+                    <input type="text" name="userName" placeholder="User Name"/>
+                    <br/>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <br/>
+                    <input type="text" name="password" placeholder="Password"/>
+                    <br/>
+                    <p>Are You an Administrator?</p>
+                    <input type="checkbox" name="admin"/>
+                </form>
 
-
-        </div>
-    )
-}
-
+            </div>
+        )
+    }
 }
 
 export default Login
