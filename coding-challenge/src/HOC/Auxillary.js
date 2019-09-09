@@ -1,3 +1,3 @@
-const aux =(props) => props.chilren
+const aux = (props) => props.chilren
 
 export default aux

@@ -3,9 +3,11 @@ import './App.css';
 import Layout from "./Componets/Layout/Layout"
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+  }
    state = {
-     userInput: ""
-
+     
   }
  
   render() {

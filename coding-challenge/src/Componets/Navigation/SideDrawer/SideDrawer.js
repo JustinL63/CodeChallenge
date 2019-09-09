@@ -5,7 +5,7 @@ const sideDrawer = (props) => {
     return (
         <Aux>
         <div>
-            
+            <h2>sideDrawer</h2>
         </div>
         </Aux>
     )
