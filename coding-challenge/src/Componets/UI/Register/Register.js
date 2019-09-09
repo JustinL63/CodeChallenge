@@ -18,7 +18,7 @@ class Register extends React.Component {
                     <br/>
                     <input type="text" placeholder="Password"></input>
                     <br/>
-                    <button onClick={this.submitRegister}>Submit</button>
+                    <button onClick={this.submitRegister}>Register</button>
                 </form>
             </div>
         )

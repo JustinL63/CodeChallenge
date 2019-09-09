@@ -11,7 +11,7 @@ class Layout extends React.Component {
             <div>
                 <Toolbar />
              
-                <Login/>
+                {this.props.isLoggedIn ? null : <Login/>}
 
             <div className={classes.Content}>
                 {this.props.children}
