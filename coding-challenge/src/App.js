@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import Login from "./Routes/Login"
 import './App.css';
+import Layout from "./Componets/Layout/Layout"
 
 class App extends Component {
+   state = {
+     userInput: ""
+
+  }
+ 
   render() {
     return (
       <div className="App">
-          <Login />
+        <Layout>
+        </Layout>
+         
       </div>
     );
   }
