@@ -4,6 +4,7 @@ import classes from "./Layout.css"
 import Toolbar from "../Navigation/Toolbar/Toolbar"
 //import SideDrawer from "../Navigation/SideDrawer/SideDrawer"
 import Login from "../UI/Login/Login"
+import Register from "../UI/Register/Register"
 
 class Layout extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class Layout extends React.Component {
             <div>
                 <Toolbar />
              
-                {this.props.isLoggedIn ? null : <Login/>}
+                {this.props.isLoggedIn ? <Register/> : <Login/>}
 
             <div className={classes.Content}>
                 {this.props.children}
