@@ -5,18 +5,24 @@ import Toolbar from "../Navigation/Toolbar/Toolbar"
 //import SideDrawer from "../Navigation/SideDrawer/SideDrawer"
 import Login from "../UI/Login/Login"
 import Register from "../UI/Register/Register"
+import {Switch, Route } from "react-router-dom"
 
 class Layout extends React.Component {
     render() {
-        return(
+        return (
             <div>
                 <Toolbar />
-             
-                {this.props.isLoggedIn ? <Register/> : <Login/>}
+              
+                <Switch>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/register" component={Register}/>
+                </Switch>
 
-            <div className={classes.Content}>
-                {this.props.children}
-            Something</div>
+                   
+
+                <div className={classes.Content}>
+                    {this.props.children}
+                </div>
             </div>
         )
     }
